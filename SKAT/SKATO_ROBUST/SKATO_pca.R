@@ -6,7 +6,7 @@ library(bigmemory)
 
 # read genotype matrix
 
-genotype_mat_path <- "/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/GENOTYPE_MATRIX/genotype_matrix.txt"
+genotype_mat_path <- "genotype_matrix.txt"
 genotype_matrix <- read.big.matrix(
   genotype_mat_path,
   sep = ",",
@@ -18,8 +18,8 @@ genotype_matrix <- read.big.matrix(
 
 #read chunk index files
 
-start_idx_path <- "/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/CHUNK_INDICES/indices_start.txt"
-end_idx_path <- "/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/CHUNK_INDICES/indices_end.txt"
+start_idx_path <- "indices_start.txt"
+end_idx_path <- "indices_end.txt"
 start_indices <- scan(start_idx_path, what = integer(), sep = "\n")
 end_indices <- scan(end_idx_path, what = integer(), sep = '\n')
 
@@ -27,12 +27,12 @@ n_SNP <- nrow(genotype_matrix)
 n_samples <- ncol(genotype_matrix)
 
 # make aritficial covariate matrix (for now we don't use covariates)
-covariate_matrix <- fread("/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/UMAP/umap.txt")
+covariate_matrix <- fread("umap.txt")
 
 covariate_matrix <- as.matrix(covariate_matrix)
 
 # make artificial (binary) response vector
-phenotype_file_path <- "/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/Phenotypes.txt"
+phenotype_file_path <- "Phenotypes.txt"
 Y <- scan(phenotype_file_path, what = integer(), sep = '\n')
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -48,7 +48,7 @@ if(n_samples != length(Y)){
 
 
 
-geneIDs_file_path <- "/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/FILTERING/GeneIDs.txt"
+geneIDs_file_path <- "GeneIDs.txt"
 geneIDs <- scan(geneIDs_file_path, what = character(), sep = '\n')
 
 
@@ -82,6 +82,6 @@ for(i in 1:num_indices){
 
 
 print(output_matrix)
-write.table(output_matrix, file = "/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/SKAT/SKATO_ROBUST/SKATO_ROBUST_pca_output_matrix.txt", row.names = FALSE, col.names = FALSE)
+write.table(output_matrix, file = "SKATO_ROBUST_pca_output_matrix.txt", row.names = FALSE, col.names = FALSE)
 print('all done')
 

@@ -3,7 +3,7 @@
 import numpy as np
 
 print('reading the gene ID file...')
-geneID_file_path = '/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/FILTERING/GeneIDs.txt'
+geneID_file_path = '/GeneIDs.txt'
 IDs = np.loadtxt(geneID_file_path,dtype = str, delimiter = None, encoding='utf-8')
 
 
@@ -55,8 +55,8 @@ print('saving the files...')
 # NOTE: I save these arrays as strings (fmt = '%s'), because the default integer saving format is a 64bit integer...
 # ... but when the real data comes, this might not be enough to store big indices
 
-outfile_start = '/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/CHUNK_INDICES/indices_start.txt'
-outfile_end = '/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/CHUNK_INDICES/indices_end.txt'
+outfile_start = 'indices_start.txt'
+outfile_end = 'indices_end.txt'
 np.savetxt(outfile_start, start_small, fmt='%s', delimiter=",")
 np.savetxt(outfile_end, end_small, fmt='%s', delimiter=",")
 

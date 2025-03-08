@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-#SBATCH --mail-user=jakub-jozef.liu@charite.de
+#SBATCH --mail-user=*********
 #SBATCH --mail-type=end
 #SBATCH --job-name=SKAT_umap
 #SBATCH --output=SKAT_umap%j.log

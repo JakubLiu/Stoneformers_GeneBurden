@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-#SBATCH --mail-user=jakub-jozef.liu@charite.de
+#SBATCH --mail-user=*********
 #SBATCH --mail-type=end
 #SBATCH --job-name=filtering
 #SBATCH --output=filtering%j.log
@@ -11,8 +11,8 @@
 #SBATCH --time=01:00:00
 
 
-input_vcf_path="/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/all_merged.ann.dbnsfp.vcf.gz"
-output_filtered_vcf_path="/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/FILTERING/VCF_filtered_less_stringent_MAF_less_than01.vcf"
+input_vcf_path="*****"
+output_filtered_vcf_path="*****"
 
 bcftools filter -i '(INFO/dbNSFP_CADD_phred >= 20 || INFO/dbNSFP_CADD_phred
 = ".") && (INFO/dbNSFP_gnomAD_exomes_AF < 0.025 || INFO/dbNSFP_gnomAD_exomes_AF

@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-#SBATCH --mail-user=jakub-jozef.liu@charite.de
+#SBATCH --mail-user=******
 #SBATCH --mail-type=end
 #SBATCH --job-name=gen_mat
 #SBATCH --output=gen_mat%j.log

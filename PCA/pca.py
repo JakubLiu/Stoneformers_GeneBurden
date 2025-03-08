@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.decomposition import PCA
 
 print('reading genotype matrix...')
-genotype_mat = np.loadtxt('/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/GENOTYPE_MATRIX/genotype_matrix.txt',
+genotype_mat = np.loadtxt('genotype_matrix.txt',
         dtype = np.int8, delimiter = ',')
 
 
@@ -32,7 +32,7 @@ pca_4pcs = genotype_mat_new_coords[:,:4]
 print('dimensions of extraction: ', pca_4pcs.shape)
 
 print('writing to file...')
-file_out_path = '/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/PCA/pca_4pcs.csv'
+file_out_path = 'pca_4pcs.csv'
 np.savetxt(file_out_path, pca_4pcs, delimiter = ',')
 
 print('all done.')

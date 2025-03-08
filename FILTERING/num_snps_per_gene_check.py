@@ -2,7 +2,7 @@
 import numpy as np
 
 
-GeneIDs = np.loadtxt('/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/FILTERING/GeneIDs.txt', dtype = str)
+GeneIDs = np.loadtxt('GeneIDs.txt', dtype = str)
 
 counter = 1
 lengths = []

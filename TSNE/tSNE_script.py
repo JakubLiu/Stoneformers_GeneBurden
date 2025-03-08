@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.manifold import TSNE
 
 print('reading genotype matrix...')
-genotype_mat = np.loadtxt('/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/GENOTYPE_MATRIX/genotype_matrix.txt',
+genotype_mat = np.loadtxt('genotype_matrix.txt',
         dtype = np.int8, delimiter = ',')
 
 
@@ -22,7 +22,7 @@ tsne_instance = TSNE(n_components=2, verbose=1, perplexity=40)
 tsne_embedding = tsne_instance.fit_transform(genotype_mat)
 
 print('saving file...')
-np.savetxt('/data/cephfs-1/work/projects/stoneformers-geneburden/stoneformers/STEP_AFTER_MEETING/TSNE/tSNE.txt',
+np.savetxt('tSNE.txt',
         tsne_embedding)
 
 print('all done.')

@@ -22,7 +22,7 @@ int main(){
     int next_chunk_start;
     int size_counter;
 
-    ID_file = fopen("geneIDs_small.txt", "r");  // open the file
+    ID_file = fopen("geneIDs.txt", "r");  // open the file
 
     i = 0;
     // loop over the lines of the file and store them in the array

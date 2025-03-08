@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-#SBATCH --mail-user=jakub-jozef.liu@charite.de
+#SBATCH --mail-user=*******
 #SBATCH --mail-type=end
 #SBATCH --job-name=SKATO_pca
 #SBATCH --output=SKATO_pca%j.log
