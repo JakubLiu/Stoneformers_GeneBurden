@@ -1,0 +1,9 @@
+2025-05-01 10:46:23	-	adoring_curran	-	ad6e6a540bdb3b63063b6179433114e3	7bdb568a-4e30-4df6-83c9-4c174c95196c	nextflow run hello-world.nf --greeting Noovera
+2025-05-01 10:47:41	1.9s	zen_keller	OK	42766bc40f9fe8a217ac6cab40346610	8caa0bf8-9118-46fb-a6e6-fdc8988746ce	nextflow run hello-world.nf --greeting Noovera
+2025-05-01 10:50:57	-	curious_dijkstra	-	2a065bae9d003261d0d2b403204b7f5c	9288573c-416c-473b-aeae-b7b94d2a62a2	nextflow run hello-world.nf
+2025-05-01 10:52:01	1.9s	focused_mclean	OK	51f21ab21bfba6e1a945ec375e065418	43643ae4-30ec-4950-adf0-b1416f8942a8	nextflow run hello-world.nf
+2025-05-01 10:52:31	1.9s	compassionate_shockley	OK	51f21ab21bfba6e1a945ec375e065418	bceda7d1-04eb-4250-9e2e-a2c9b301c3eb	nextflow run hello-world.nf --greeting Siemano
+2025-05-01 11:22:22	2.6s	big_neumann	OK	9bdfea5f18d42258a23f9a80e68fd2d7	ae6cdc9c-9e4c-43e6-8444-4e6ac25bf148	nextflow run part2.1_hello-channels.nf
+2025-05-01 11:46:14	1.7s	condescending_maxwell	ERR	9f89b139ac1a9db3272ed3ff28a2168a	d1cdb56f-736b-48b7-b5de-65df1b67177f	nextflow run part2.2_hello-channels.nf
+2025-05-01 11:46:37	2s	sharp_kare	ERR	d5790610b31f409ec7b866a9a745d5c1	6ac8c42d-7dea-4c90-828f-87ece4a9725d	nextflow run part2.2_hello-channels.nf
+2025-05-01 11:47:01	2.6s	high_euler	OK	99a19b6ea078b47612cb52bb36efd873	3e073473-4b0f-489b-94f1-1c14365ee91f	nextflow run part2.2_hello-channels.nf
