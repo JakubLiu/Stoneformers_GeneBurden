@@ -7,3 +7,7 @@
 2025-05-01 11:46:14	1.7s	condescending_maxwell	ERR	9f89b139ac1a9db3272ed3ff28a2168a	d1cdb56f-736b-48b7-b5de-65df1b67177f	nextflow run part2.2_hello-channels.nf
 2025-05-01 11:46:37	2s	sharp_kare	ERR	d5790610b31f409ec7b866a9a745d5c1	6ac8c42d-7dea-4c90-828f-87ece4a9725d	nextflow run part2.2_hello-channels.nf
 2025-05-01 11:47:01	2.6s	high_euler	OK	99a19b6ea078b47612cb52bb36efd873	3e073473-4b0f-489b-94f1-1c14365ee91f	nextflow run part2.2_hello-channels.nf
+2025-05-01 20:18:47	2.3s	prickly_lovelace	OK	7fdfa090b8c0bb7286b601b5a2fc9cd0	b09ee3fb-d483-4ad5-8b04-82b60f6b882d	nextflow run part3.1_hello_workflows.nf
+2025-05-01 20:21:15	3.9s	astonishing_bose	OK	7fdfa090b8c0bb7286b601b5a2fc9cd0	23a47eb0-c66f-48c7-a72b-47736f062609	nextflow run part3.1_hello_workflows.nf
+2025-05-01 20:22:22	4.1s	kickass_leakey	OK	0681762e260c3894de7d630b4a520fc4	f40856b3-d6aa-45fc-b07b-ecbc8853f306	nextflow run part3.1_hello_workflows.nf
+2025-05-01 20:23:01	3.8s	zen_kalam	OK	0681762e260c3894de7d630b4a520fc4	54bc693b-7d42-49ab-b864-e1fc19624987	nextflow run part3.1_hello_workflows.nf
