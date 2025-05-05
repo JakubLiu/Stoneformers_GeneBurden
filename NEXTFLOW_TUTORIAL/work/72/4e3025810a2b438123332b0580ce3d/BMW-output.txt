@@ -1,0 +1,1 @@
+/mnt/c/Users/Qba Liu/Documents/STUDIA/CHARITE/RARE_VARIANT_GWAS/NEXTFLOW_TUTORIAL/work/dc/f0d841ef5de72114f629c5fea213af/BMW-output.txt
